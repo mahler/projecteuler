@@ -31,7 +31,8 @@ func main() {
 		triangularNumber = counter * (counter + 1) / 2
 		factors = findFactors(triangularNumber)
 
-		fmt.Println(triangularNumber, " - ", len(factors))
+		// Uncomment this line below to follow progress... you need to 75mil + number to find the solution :)
+		//fmt.Println(triangularNumber, " - ", len(factors))
 		if len(factors) > 500 {
 			break
 		}
