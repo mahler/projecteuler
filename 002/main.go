@@ -35,6 +35,6 @@ func main() {
 		}
 	}
 
-	fmt.Println("Result:", sum)
+	fmt.Println("002/ Result:", sum)
 
 }

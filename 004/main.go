@@ -27,7 +27,7 @@ func main() {
 		}
 
 	}
-	fmt.Println(numberOne, "x", numberTwo, "=", largestPalindrome)
+	fmt.Println("004/", numberOne, "x", numberTwo, "=", largestPalindrome)
 }
 
 func productIsPalindrome(p int) bool {

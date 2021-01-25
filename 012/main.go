@@ -38,7 +38,7 @@ func main() {
 		}
 	}
 
-	fmt.Println("Triangular number:", triangularNumber)
+	fmt.Println("012/ Triangular number:", triangularNumber)
 	//fmt.Println(factors)
 }
 

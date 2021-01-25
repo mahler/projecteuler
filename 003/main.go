@@ -30,5 +30,5 @@ func main() {
 
 	// fmt.Println(primefactors)
 	// Print largest primefactor:
-	fmt.Println(primefactors[len(primefactors)-1])
+	fmt.Println("003/", primefactors[len(primefactors)-1])
 }

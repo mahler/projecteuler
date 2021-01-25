@@ -12,5 +12,5 @@ func main() {
 			sum += x
 		}
 	}
-	fmt.Println("Sum:", sum)
+	fmt.Println("001/ Sum:", sum)
 }

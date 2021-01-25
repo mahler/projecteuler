@@ -33,6 +33,6 @@ func main() {
 	fmt.Println(bigSum)
 	fmt.Println()
 	strBigSum := fmt.Sprintf("%s", bigSum)
-	fmt.Println("First 10 digits:")
+	fmt.Println("013/ First 10 digits:")
 	fmt.Println(strBigSum[0:10])
 }

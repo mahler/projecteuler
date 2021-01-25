@@ -14,7 +14,7 @@ func main() {
 
 	for {
 		primeValue++
-		if IsPrime(primeValue) {
+		if isPrime(primeValue) {
 			primeNumber++
 		}
 		if primeNumber == 10001 {
@@ -22,10 +22,10 @@ func main() {
 		}
 	}
 
-	fmt.Println(primeValue, " is prime number", primeNumber)
+	fmt.Println("007/", primeValue, " is prime number", primeNumber)
 }
 
-func IsPrime(value int) bool {
+func isPrime(value int) bool {
 	for i := 2; i <= int(math.Floor(float64(value)/2)); i++ {
 		if value%i == 0 {
 			return false

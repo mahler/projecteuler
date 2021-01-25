@@ -92,5 +92,5 @@ func main() {
 
 	fmt.Println(a, b, c, d)
 	fmt.Println("Solution found in", direction)
-	fmt.Println("Solution:", maxSum)
+	fmt.Println("011/ Solution:", maxSum)
 }

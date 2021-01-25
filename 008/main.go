@@ -49,6 +49,7 @@ func main() {
 		}
 	}
 
+	fmt.Println("008/")
 	for i := 0; i < adjacent; i++ {
 		fmt.Print(numbers[maxIndex+i])
 		if i != adjacent-1 {

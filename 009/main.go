@@ -27,5 +27,5 @@ func main() {
 found:
 
 	fmt.Println("Found numbers:", a, b, c)
-	fmt.Println("Product:", a*b*c)
+	fmt.Println("009/ Product:", a*b*c)
 }

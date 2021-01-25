@@ -28,5 +28,5 @@ func main() {
 	fmt.Println(int(sqNat))
 
 	fmt.Println()
-	fmt.Println("Result:", int(sqSum)-int(sqNat))
+	fmt.Println("006/ Result:", int(sqSum)-int(sqNat))
 }

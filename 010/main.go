@@ -25,7 +25,7 @@ func main() {
 		primeSum += p
 	}
 
-	fmt.Println(primeSum)
+	fmt.Println("010/", primeSum)
 }
 
 func isPrime(value int) bool {

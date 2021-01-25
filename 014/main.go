@@ -29,7 +29,7 @@ func main() {
 		}
 	}
 
-	fmt.Println("Max Collatz size:", maxCollatz)
+	fmt.Println("014/ Max Collatz size:", maxCollatz)
 	fmt.Println("Start number:", startNumber)
 }
 
