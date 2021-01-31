@@ -18,6 +18,7 @@ func main() {
 	remaining, perm, index := 999999, 1, 0
 
 	fmt.Println("024/ What is the millionth lexicographic permutation of the digits?")
+
 	for i := 9; i > 0; i-- {
 		perm = 1
 		for j := i; j > 0; j-- {
@@ -25,14 +26,14 @@ func main() {
 		}
 		index = remaining / perm
 		remaining = remaining % perm
-		j := 0
-		for j = 0; j < index || used[j]; j++ {
-			if used[j] {
+		k := 0
+		for k = 0; k < index || used[k]; k++ {
+			if used[k] {
 				index++
 			}
 		}
-		used[j] = true
-		fmt.Print(j)
+		used[k] = true
+		fmt.Print(k)
 	}
 	fmt.Println(remaining)
 }
