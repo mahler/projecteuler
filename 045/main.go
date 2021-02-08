@@ -10,8 +10,11 @@ func main() {
 	var hexmap = map[int64]bool{}
 
 	for i := int64(2); ; i++ {
+		// Calc Triangle number:
 		t := (i * (i + 1)) / 2
+		// Calc Pentagonal number:
 		p := (i * ((3 * i) - 1)) / 2
+		// Calc Hexagonal number:
 		h := (i * ((2 * i) - 1))
 
 		penmap[p] = true
