@@ -10,7 +10,7 @@ import (
 const log2of40 = 6
 
 func main() {
-	data := Import("network.txt")
+	data := importFile("network.txt")
 	n := len(data)
 	test := make([][]int, n)
 
@@ -92,7 +92,7 @@ func isConnected(A [][]int) bool {
 	}
 
 	for i := 0; i < log2of40; i++ {
-		clone = SqrIntMatrix(clone)
+		clone = sqrIntMatrix(clone)
 		clone = normalize(clone)
 	}
 
@@ -119,7 +119,7 @@ func normalize(A [][]int) [][]int {
 	return clone
 }
 
-func Import(filename string) []string {
+func importFile(filename string) []string {
 	// read whole the file
 	b, err := ioutil.ReadFile(filename)
 	if err != nil {
@@ -146,7 +146,7 @@ func Import(filename string) []string {
 
 }
 
-func SqrIntMatrix(A [][]int) [][]int {
+func sqrIntMatrix(A [][]int) [][]int {
 	n := len(A)
 	square := make([][]int, n)
 	for i := 0; i < n; i++ {
