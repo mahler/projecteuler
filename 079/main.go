@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"log"
+	"os"
 	"strings"
 )
 
@@ -17,7 +17,7 @@ import (
 
 func main() {
 	var passcode string
-	data, err := ioutil.ReadFile("p079_keylog.txt")
+	data, err := os.ReadFile("p079_keylog.txt")
 	if err != nil {
 		log.Fatal("File reading error", err)
 		return

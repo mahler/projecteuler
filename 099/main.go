@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"log"
 	"math"
+	"os"
 	"strconv"
 	"strings"
 )
@@ -17,7 +17,7 @@ import (
 // has the greatest numerical value.
 
 func main() {
-	data, err := ioutil.ReadFile("p099_base_exp.txt")
+	data, err := os.ReadFile("p099_base_exp.txt")
 	if err != nil {
 		log.Fatal("File reading error", err)
 		return

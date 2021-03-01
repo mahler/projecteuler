@@ -2,14 +2,14 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"log"
+	"os"
 	"strconv"
 	"strings"
 )
 
 func main() {
-	data, err := ioutil.ReadFile("p081_matrix.txt")
+	data, err := os.ReadFile("p081_matrix.txt")
 	if err != nil {
 		log.Fatal("File reading error", err)
 		return

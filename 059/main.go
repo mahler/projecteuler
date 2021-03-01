@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"log"
+	"os"
 	"strconv"
 	"strings"
 )
@@ -12,7 +12,7 @@ var ciphertext []int
 
 func main() {
 	ciphertext = make([]int, 0)
-	fileContent, err := ioutil.ReadFile("p059_cipher.txt")
+	fileContent, err := os.ReadFile("p059_cipher.txt")
 	if err != nil {
 		log.Fatal("File reading error", err)
 		return
