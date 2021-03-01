@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"log"
+	"os"
 	"strconv"
 	"strings"
 )
@@ -17,7 +17,7 @@ import (
 func main() {
 	adjacent := 13
 
-	data, err := ioutil.ReadFile("puzzle.txt")
+	data, err := os.ReadFile("puzzle.txt")
 	if err != nil {
 		log.Fatal("File reading error", err)
 		return

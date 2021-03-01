@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"log"
+	"os"
 	"sort"
 	"strings"
 )
@@ -18,7 +18,7 @@ import (
 // What is the total of all the name scores in the file?
 
 func main() {
-	data, err := ioutil.ReadFile("p022_names.txt")
+	data, err := os.ReadFile("p022_names.txt")
 	if err != nil {
 		log.Fatal("File reading error", err)
 		return

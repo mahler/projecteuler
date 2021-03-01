@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"log"
+	"os"
 	"strconv"
 	"strings"
 )
@@ -17,7 +17,7 @@ import (
 // What is the greatest product of four adjacent numbers in the same direction (up, down, left, right, or diagonally) in the 20×20 grid?
 
 func main() {
-	data, err := ioutil.ReadFile("puzzle.txt")
+	data, err := os.ReadFile("puzzle.txt")
 	if err != nil {
 		log.Fatal("File reading error", err)
 		return

@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	"os"
 	"strconv"
 	"strings"
 )
@@ -38,7 +38,7 @@ var arr [][]int
 var bests [][]int
 
 func main() {
-	fileBuf, _ := ioutil.ReadFile("p018_triangle.txt")
+	fileBuf, _ := os.ReadFile("p018_triangle.txt")
 	fileStr := strings.Trim(string(fileBuf), "")
 
 	oneDArrStr := strings.Split(fileStr, "\n")

@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	"os"
 	"strings"
 )
 
@@ -21,7 +21,7 @@ var triangles []int
 
 func main() {
 	//read names
-	fileContent, _ := ioutil.ReadFile("p042_words.txt")
+	fileContent, _ := os.ReadFile("p042_words.txt")
 
 	fileStr := string(fileContent)
 	words := strings.Split(fileStr, ",")
