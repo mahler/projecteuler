@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	"os"
 	"strconv"
 	"strings"
 )
@@ -93,7 +93,7 @@ func sum(set []int) (total int) {
 
 func Import(filename string) []string {
 	// read whole the file
-	b, err := ioutil.ReadFile(filename)
+	b, err := os.ReadFile(filename)
 	if err != nil {
 		panic(err)
 	}
