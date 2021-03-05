@@ -7,6 +7,7 @@ import (
 	"strings"
 )
 
+// https://projecteuler.net/problem=83
 func main() {
 	size := 80
 	data := fileImport("p083_matrix.txt")
